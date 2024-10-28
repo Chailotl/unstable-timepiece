@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "unstable_timepiece",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "A strange artifact that lets you manipulate your own time field",
+	"authors": [
+		"Chai"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/unstable-timepiece/",
+		"sources": "https://github.com/chailotl/unstable-timepiece",
+		"issues": "https://github.com/chailotl/unstable-timepiece/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/SuZb3aJUCx"
+			}
+		}
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/unstable_timepiece/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.chailotl.unstable_timepiece.Main"
+		],
+		"client": [
+			"com.chailotl.unstable_timepiece.ClientMain"
+		]
+	},
+	"mixins": [
+		"unstable_timepiece.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

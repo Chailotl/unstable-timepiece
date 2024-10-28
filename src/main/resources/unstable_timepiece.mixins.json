@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.chailotl.unstable_timepiece.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"LivingEntityInvoker",
+		"PlayerEntityMixin",
+		"StatusEffectInstanceMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
